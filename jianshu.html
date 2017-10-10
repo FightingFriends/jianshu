@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简书</title>
+
+<link rel="stylesheet" href="jianshuhead.css" type="text/css">
+    <link rel="stylesheet" href="imgzhongjian.css" type="text/css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="jianshu.js"></script>
+    <script src="jq.js"></script>
+    <script src="qrcode.min.js"></script>
+
+</head>
+<body>
+<div id="container">
+<div id="header">
+    <ul>
+        <li class="jianshu">简书</li>
+         <li class="h2" id="faxian">发现</li>
+
+
+        <li class="h4" id="new" > <span>消息</span></li>
+    </ul>
+    <div id="yincang">
+        <div class="h3" id="guanzhu">关注</div>
+        <div id="yincangfirst">
+        <ul>
+            <li class="secondyincang ">
+
+                <a href="" class="color">
+                    <i class="fa fa-comment-o red" ></i>   <span class="second">评论</span>
+                </a>
+            </li>
+            <li class="secondyincang ">
+
+                <a href="" class="color">
+                    <i class="fa fa-envelope-o red" ></i>  <span class="second">简信</span>
+                </a>
+            </li>
+
+            <li class="secondyincang color">
+                <a href="" class="color">
+
+                    <span class="second">投稿请求</span>
+                </a>          </li>
+            <li class="secondyincang">
+                <a href="" class="color">
+                    <i class="fa fa-heart-o red" ></i>  <span class="second">喜欢和赞</span>
+                </a>          </li>
+            <li class="secondyincang">
+                <a href="">
+                    <i class="fa fa-user-o red" ></i>
+                <span class="second color">关注</span>
+                </a>
+            </li>
+            <li class="secondyincang">
+                <a href="" class="color">
+                    <i class="fa fa-money red"></i>    <span class="second">赞赏</span>
+                </a>          </li>
+            <li class="secondyincang">
+                <a rel=""   href="">
+                    <i ></i><span class="second color">其他信息</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+
+
+    <div class="divinput yun">
+        <input  class="iv yun" type="search" placeholder="搜索" >
+
+    </div>
+
+
+    <div>
+        <div id="Aa">
+Aa
+        </div>
+        <div id="moshi">
+            <i class="fa fa-moon-o moongrey" ></i><span class="moon">夜间模式</span>
+            <button class="kai">开</button><button class="guan">关</button>
+            <button class="kai btn">宋体</button><button class="kuan ">黑体</button>
+            <button class="kai btn">简</button><button class="kuan">繁</button>
+        </div>
+    </div>
+
+
+
+<div id="bianhua">
+    <div id="myhead">
+        <img id="headmy" src="//upload.jianshu.io/users/upload_avatars/5644363/3a78dfb7-0a23-4d58-8acd-62f80fce1813?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" alt="120" />
+    </div>
+
+
+
+
+    <div id="yincangsecond">
+        <ul>
+            <li class="secondyincang">
+            <a href="" class="color">
+                <i class="fa fa-user red" ></i> <span class="second color">我的主页</span>
+            </a>
+        </li>
+
+                <li class="secondyincang">
+
+                    <a href="" class="color">
+                   <i class="icgation-mark red"></i><span class="second">收藏的文章</span>
+                    </a>
+                        </li>
+
+            <li class="secondyincang">
+                <a href="" class="color">
+                    <i class="iconfont ic-navigation-like red"></i><span class="second">喜欢的文章</span>
+                </a>          </li>
+            <li class="secondyincang">
+                <a href="" class="color" >
+                    <i class="fa fa-credit-card red" ></i>  <span class="second">我的钱包</span>
+                </a>          </li>
+              <li class="secondyincang">
+
+                  <i class="fa fa-cog red" ></i>    <span class="second">设置</span>
+            </li>
+            <li class="secondyincang">
+                <a href="" class="color">
+                    <i class="fa fa-commenting red" ></i>    <span class="second">帮助与反馈</span>
+                </a>          </li>
+            <li class="secondyincang">
+                <a class="color"  href="">
+          <i class="fa fa-sign-out red" ></i>  <span class="second">退出</span>
+                </a>          </li>
+        </ul>
+                    </div>
+</div>
+
+    <a id="btn" href=""><div id="bn">写文章</div></a>
+
+</div>
+
+    <div class="sousuo">
+        <span class="sou">热门搜索</span><span class="sou" id="huan">换一批</span>
+        <span class="pailie"> 我老婆是冰山女总裁</span>
+        <span class="pailie">总裁重追前妻</span><span class="pailie">鹿晗</span>
+        <span class="pailie">闯荡都市</span><span class="pailie">手账</span>
+        <span class="pailie">UXdesigner李</span ><span class="pailie">故事会</span>
+        <span class="pailie">鹿晗关晓彤</span>
+    </div>
+
+<div id="firstimg" class="img">
+
+    <a target="_blank" href="http://www.jianshu.com/p/063a77e3ccfa?utm_medium=index-banner&amp;utm_source=desktop">
+        <img id="imgfirst" src="//upload.jianshu.io/admin_banners/web_images/3675/033d60b06c93447f5a8080e6adfdf07938e4ff91.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540" /></a>
+
+</div>
+    <div id="secondimg" class="img">
+        <a target="_blank" href="http://www.jianshu.com/p/714df453ae5f?utm_medium=index-banner&amp;utm_source=desktop">
+            <img id="imgsecond" src="//upload.jianshu.io/admin_banners/web_images/3682/03fb31d8d017b687da941dcbce07162dc57d70d6.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540" /></a>
+    </div>
+
+    <div id="thirdimg" class="img">
+        <a target="_blank" href="http://www.jianshu.com/p/92bfff8dd31c?utm_medium=index-banner&amp;utm_source=desktop">
+            <img id="imgthird" src="//upload.jianshu.io/admin_banners/web_images/3677/e347528cf56b04f15d8b0e5d7e9d9aa32739e7c6.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540" /></a>
+    </div>
+    <div id="biaoqian">
+
+            <a class="collection color" target="_blank" href="">
+                <img class="img" src="//upload.jianshu.io/collections/images/20/%E5%9B%BE.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+
+
+                <div class="name">青春</div>
+            </a>
+
+                      <a class="collection color"  href="" target="_blank" >
+            <img class="img" src="//upload.jianshu.io/collections/images/497216/WechatIMG207.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"  />
+            <div class="name">书法</div>
+        </a>            <a class="collection color"  href="" target="_blank" >
+            <img class="img" src="//upload.jianshu.io/collections/images/30/IMG_2226.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <div class="name">美食</div>
+        </a>            <a id="IT" class="collection color"  href="" target="_blank" >
+            <img class="img" src="//upload.jianshu.io/collections/images/14/6249340_194140034135_2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <div class="name">@IT·互联网</div>
+        </a>
+        <a class="collection color"  href="" target="_blank" >
+            <img class="img" src="//upload.jianshu.io/collections/images/75/22.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <div class="name">历史</div>
+        </a>            <a id="story" class="collection color" href="" target="_blank" >
+            <img class="img" src="//upload.jianshu.io/collections/images/505744/16266155_1449641396772.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <div class="name">乡土故事</div>
+        </a>            <a id="life" class="collection color"  target="_blank" href="">
+            <img class="img" src="//upload.jianshu.io/collections/images/25920/enhanced-buzz-wide-16461-1372163238-8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <div class="name">生活家</div>
+        </a>
+        <a id="more" class="collection color" target="_blank" href="">
+            <div class="name">更多热门专题 ></div>
+        </a>
+
+    </div>
+    <div id="bangdan">
+
+        <ul>
+
+            <li  id="ibr" class="firstbr">
+                <a href=" http://www.jianshu.com/recommendations/notes?category_id=56&utm_medium=index-banner-s&utm_source=desktop">
+                <div class="wenzi color">新上榜></div>
+                </a>
+            </li>
+
+            <li id="qiri" class="firstbr">
+                <div class="wenzi color"  >七日热门></div>
+            </li>
+            <li id="sanshi" class="firstbr">
+                <div class="wenzi color">30日热门></div>
+            </li>
+            <li id="chuban" class="firstbr">
+                <div class="wenzi color">简书出版></div>
+            </li>
+            <li  id="xuetang" class="firstbr">
+                <div class="wenzi color">简书大学堂></div>
+            </li>
+        </ul>
+        </div>
+    <div id="erweima">
+
+<div id="er">
+
+</div>
+</div>
+<div id="pinglun">
+<ul>
+    <li id="pinglunfirst" >
+
+        <a class="makeimg color" target="_blank" href="">
+            <img class="pinglunimg"  src="//upload.jianshu.io/users/upload_avatars/5337471/059ab6f2-9a73-4d0c-b5ec-8cf37507183d?imageMogr2/auto-orient/strip|imageView2/1/" alt="64" />
+
+        作家明月沧海</a>
+
+
+
+
+
+
+        <a  target="_blank" class="color" href="http://www.jianshu.com/p/32802271c79c"><h3>100天，敢不敢给自己一场蜕变</h3></a>
+        <img class="ssg" src="http://upload-images.jianshu.io/upload_images/7770766-3229106b1ebc4bd9.jpg?imageMogr2/auto-orient/strip|imageView2/1/">
+       <div class="pinglunwenzi"> 今天看了日历，发现2017只剩100天了，朋友圈也被各种励志鸡汤刷屏。
+        很多人感慨时间的流逝，也在反思自己大半年的历程。 你的265天过得怎么样呢？ 翻开年初清单，你完成了吗...
+
+       </div>
+<ul class="pingjia">
+   <li class="box " >   <a href="http://www.jianshu.com/c/RfYyQj">散文</a></li>
+
+   <li><i class="fa fa-eye lie" ><span>234</span></i></li>
+    <li><i class="fa fa-thumbs-up lie"><span>246</span></i></li></ul>
+
+
+
+
+    </li>
+<li class="pinglun">
+    <div class="pinglun">
+    <a class="makeimg color" target="_blank" href="">
+
+        <img class="pinglunimg" src="//upload.jianshu.io/users/upload_avatars/79136/1413205b5d66?imageMogr2/auto-orient/strip|imageView2/1/" alt="64" />
+
+    归止的谷奶小岛 </a>
+      <span>  前天 11:50</span>
+    <a  target="_blank"  class="color" href="http://www.jianshu.com/p/3602c1d6cb7d"><h3>没看过这几部电影，都不好意思说自己是文艺小清新</h3></a>
+<img class="ssg" src="http://upload-images.jianshu.io/upload_images/4094769-966b1bcdceebadca.jpg?imageMogr2/auto-orient/strip|imageView2/1/">
+       <div class="pinglunwenzi"> 《海街日记》 最是喜欢影片中的风景，错落有致的房子，湛蓝明朗的天空，干净的街道，整洁的老屋。还有放眼望去泛着白色浪花的大海，坐落于海边的安静城市，在淡蓝天空的映衬下，美得很舒...</div>
+    <ul class="pingjia">
+        <li class="box " >   <a href="http://www.jianshu.com/c/RfYyQj">散文</a></li>
+
+        <li><i class="fa fa-eye lie" ><span>234</span></i></li>
+        <li><i class="fa fa-thumbs-up lie"><span>246</span></i></li></ul>
+    </div>
+
+
+</li>
+    <li class="pinglun">
+        <a class="makeimg color" target="_blank" href="">
+            <img class="pinglunimg" src="//upload.jianshu.io/users/upload_avatars/1929704/89ac2756-95be-4bd6-9a69-547d9b7a3eb2.jpg?imageMogr2/auto-orient/strip|imageView2/1/" alt="64" />
+
+            子聿</a> <span>前天 11:50</span>
+    <a  target="_blank"  class="color" href="http://www.jianshu.com/p/3602c1d6cb7d"><h3>今晚赏月时，你一定能用到的诗词
+    </h3></a>
+        <img class="ssg" src="http://upload-images.jianshu.io/upload_images/1096130-c8d3120b1efbee00.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240">
+        <div class="pinglunwenzi">01 ﻿但愿人长久，千里共婵娟——苏轼 比较普通的一句，全民都会，但是也是最实用的一句。婵娟就是月亮，赏月时吟咏这句，既能祝福身边人地久天长，也能表达对远方人的思念。 02 ... </div>
+        <ul class="pingjia">
+            <li class="box" id="wen">   <a href="http://www.jianshu.com/c/RfYyQj">以文会友</a></li>
+
+            <li><i class="fa fa-eye lie" ><span>234</span></i></li>
+            <li><i class="fa fa-thumbs-up lie"><span>246</span></i></li></ul>
+
+
+    </li>
+    <li class="pinglun">
+        <a class="makeimg color" target="_blank" href="">
+
+            <img class="pinglunimg" src="//upload.jianshu.io/users/upload_avatars/2542851/0dca220dd6bb.jpeg?imageMogr2/auto-orient/strip|imageView2/1/" alt="64" />
+
+       归止的谷奶小岛 </a> <span>前天 11:50</span>
+    <a  target="_blank"   class="color" href="http://www.jianshu.com/p/3602c1d6cb7d"><h3>我想以自己喜欢的方式，度过自己的一生
+    </h3></a>
+        <img class="ssg" src="http://upload-images.jianshu.io/upload_images/1997529-12f62b9c8911bba0.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240">
+    <div class="pinglunwenzi">    文/怀左同学 01 早上醒来，看到朋友去了山海关，她给我发信息：我看到了高中历史书上的风景，还看到了你当年随心所欲去浪的山海关…… 当年我去的时候，完全穷游，身上带了几百块钱...
+    </div>
+
+        <ul class="pingjia">
+            <li class="box " >   <a href="http://www.jianshu.com/c/RfYyQj">散文</a></li>
+
+            <li><i class="fa fa-eye lie" ><span>234</span></i></li>
+            <li><i class="fa fa-thumbs-up lie"><span>246</span></i></li></ul>
+
+
+    </li>
+</ul>
+</div>
+    <div>
+
+    </div>
+    <div id="app" class="right">
+        <div id="qrcode">
+        </div>
+        <div class="xiazai">下载简书APP</div>
+
+        <div class="suishi">随时随地发现和创作内容</div>
+    </div>
+    <div id="datenews" class="right">
+
+<div class="firstbr" id="wenzi">
+        <span class="news">简书日报</span><span class="chakan">查看往期</span>
+    </div>
+
+        <div class="firstbr" id="daiyu">
+            <a target="_blank" class="note" href="">
+                <img class="imgne" src="//upload-images.jianshu.io/upload_images/568470-da793ff0119c2bd9.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96" />
+             <span class="wz">  黛玉早报170927 —— 《被皇帝召见是怎样的情景？》</span>
+            </a>
+        </div>
+        <div class="firstbr"  id="shiyi">
+            <a target="_blank" class="note" href="">
+                <img class="imgne" src="//upload-images.jianshu.io/upload_images/790541-1f4e75e58a3082a3.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96" />
+               <span class="wz">视觉馆009——嘿，十一打算去哪儿？</span>
+            </a>
+        </div>
+        <div class="firstbr" id="tuijian">
+            <span class="news">推荐作者</span><span class="chakan">换一批</span>
+        </div>
+        <div class="firstbr secondbr">
+            <img class="atimg" src="//upload.jianshu.io/users/upload_avatars/1348195/6b90ce71-02fe-4083-a40c-ea9a3161ccef.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+
+            <a class="author" target="_blank" href="">文俊粥</a>
+            <span class="xihuan">写了343k字 · 19.8k喜欢</span>
+
+
+        </div>
+        <div class="firstbr secondbr">
+            <img class="atimg" src="//upload.jianshu.io/users/upload_avatars/1971758/d5ecea39-60e8-482c-8e32-520775a9bb47.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+            <a class="author" target="_blank" href="">山妖妙妙</a>
+            <span class="xihuan">写了79.3k字 · 6.2k喜欢</span>
+        </div>
+        <div class="firstbr secondbr">
+
+            <img class="atimg" src="//upload.jianshu.io/users/upload_avatars/5350869/98b1bc8b-dd0f-4c83-aeb4-0d9d276f5ec8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64" />
+     <a  target="_blank" href="" class="author" >   名贵的考拉</a>
+            <span class="xihuan">写了45.3k字 · 6.9k喜欢</span>
+        </div>
+        <div class="firstbr secondbr">
+            <img  class="atimg" src="http://upload.jianshu.io/users/upload_avatars/1996705/738ba2908445?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96">
+            <a target="_blank" href="" class="author">白发</a>
+            <span  class="xihuan">写了70.3k字 · 4.2k喜欢 </span>
+        </div>
+        <div class="firstbr secondbr">
+<img class="atimg" src="http://upload.jianshu.io/users/upload_avatars/7290998/eda5a366-db3f-4615-af07-a8f05b2aaf26.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96">
+            <a target="_blank" href="" class="author" >山妖妙妙</a>
+            <span class="xihuan">写了94.2k字 · 4.8k喜欢 </span>
+        </div>
+        <div class="firstbr secondbr">
+            <img  class="atimg" src=" http://upload.jianshu.io/users/upload_avatars/1835826/fcfb7cdd47bd.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96">
+            <a target="_blank" href="" class="author">简书博客</a>
+
+            <span  class="xihuan">写了90.8k字 · 5.2k喜欢 </span>
+        </div>
+
+    </div>
+    <div id="author" class="right">
+
+    </div>
+</div>
+
+</body>
+</html>
