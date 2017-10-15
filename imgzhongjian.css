@@ -2,10 +2,13 @@
     margin:0;
     padding:0;
 }
-a:link {
+a:link{
+    text-decoration:none;
+}
 
-    text-decoration: none;
-
+h3.a:hover{
+    text-decoration:underline;
+    text-decoration-color:black;
 }
 
 
@@ -19,8 +22,8 @@ max-width:1600px;
     position:fixed;
     width:100%;
     height:60px;
-    background:white;
-    z-index:1;
+    background-color:white;
+    z-index:5;
     border-bottom:grey solid 1px;
 }
 .img{
@@ -33,10 +36,11 @@ max-width:1600px;
 
 
 
+
     height:300px;
 }
 #imgfirst{
-    z-index:1;
+
     width:600px;
     height:300px;
 }
@@ -46,6 +50,7 @@ max-width:1600px;
     width:400px;
     height:150px;
     background:pink;
+
 }
 #imgsecond{
     width:400px;

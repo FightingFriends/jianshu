@@ -69,7 +69,7 @@ background:lightgrey;
     left:450px;
     width:280px;
     height:240px;
-    background-color:white;
+
     z-index:3;
     box-shadow:0 0 5px lightgrey;
     display:none;
@@ -254,7 +254,7 @@ border:solid lightgrey 1px;
     height:350px;
     background:white;
    left:180px;
-z-index:3;
+z-index:0;
     display:none;
     -webkit-box-shadow:0 0 3px lightgrey;
     -moz-box-shadow: 0 0 3px lightgrey;
@@ -292,7 +292,7 @@ font-size:25px;
     margin-top:10px;
 position:absolute;
     color:lightgrey;
-    background-color:red;
+
 }
 
 
