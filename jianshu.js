@@ -2,16 +2,22 @@ window.onload=function() {
 
 var h=document.getElementById("header");
     var yin = document.getElementById("yincangsecond");
-    var firstyin = document.getElementById("yincangfirst");
-    var fyin = document.getElementById("yincang");
+
     var bian = document.getElementById("bianhua");
     var second = document.getElementsByClassName("secondyincang");
     var ohead = document.getElementById("myhead");
 
     var news = document.getElementById("new");
     var guan = document.getElementById("guanzhu");
+    var firstyin = document.getElementById("yincangfirst");
+    var fyin = document.getElementById("yincang");
+
+    var sousuo=document.getElementById("sousuo");
+    var so=document.getElementById("divinput");
+
     var faxian = document.getElementById("faxian");
 var Aa= document.getElementById("Aa");
+
 var moshi = document.getElementById("moshi");
 var kai=document.getElementById("kai");
 var g=document.getElementById("guan");
@@ -19,10 +25,20 @@ var g=document.getElementById("guan");
     var yun = document.getElementsByClassName('yun');
     var app=document.getElementById("app");
     var erweima=document.getElementById("erweima");
-    var sousuo=document.getElementsByClassName("sousuo");
-var iv=document.getElementsByClassName("divinput");
-var sou=document.getElementById("sou");
+
+
+
     var mg=document.getElementsByClassName("mg");
+
+   so.onclick = function () {
+
+
+    };
+
+
+
+
+
     app.onmouseover=function(){
 erweima.style.display="block";
 
@@ -32,19 +48,9 @@ erweima.style.display="block";
         erweima.style.display="none";
     };
 
-    Aa.onclick = function (ev) {
-        var oEvent = ev || event;
-        oEvent.cancelBubble = true;
-        stopBubble(oEvent);
-        moshi.style.display = "block";
 
-    };
 
-    document.onclick=function(){
-        sousuo.style.display = 'none';
-        moshi.style.display = 'none';
 
-    };
     for (var j= 0; j< mg.length; j++) {
         mg[j].onmouseover=function() {
           this.style.textDecoration = "underline";
@@ -55,18 +61,13 @@ erweima.style.display="block";
     }
 
 
-    iv.onclick = function () {
-        sousuo.style.display = "block";
+    function bs(x) {
+        x.style.backgroundColor = "black";
+    }
 
-    };
-    sou.onclick = function () {
-        sousuo.style.display = "block";
-
-    };
-    sou.onmouseout = function () {
-        sousuo.style.display = "none";
-
-    };
+    function nl(x) {
+        x.style.backgroundColor = "grey";
+    }
 
 
     guan.onmouseover = function () {
@@ -95,6 +96,33 @@ erweima.style.display="block";
         yin.style.display = "none";
 
     };
+
+    faxian.onmouseover = function () {
+        bianse(this)
+    };
+    faxian.onmouseout = function () {
+        normal(this)
+    };
+
+    news.onmouseover = function () {
+        bianse(this)
+    };
+    news.onmouseout = function () {
+        normal(this)
+    };
+    guan.onmouseover = function () {
+        bianse(this)
+    };
+    guan.onmouseout = function () {
+        normal(this)
+    };
+    function bianse(x) {
+        x.style.backgroundColor = "lightgrey";
+    }
+
+    function normal(x) {
+        x.style.backgroundColor = "white";
+    }
     kai.onclick= function() {
         this.style.backgroundColor = "deepskyblue";
         document.body.style.backgroundColor="darkslategrey";
@@ -102,52 +130,113 @@ erweima.style.display="block";
         h.style.backgroundColor = "darkslategrey";
         yin.style.backgroundColor = "darkslategrey";
         firstyin.style.backgroundColor = "darkslategrey";
+        for (var i = 0; i < second.length; i++) {
+            second[i].onmouseover = function () {
+                bs(this)
+            };
+            second[i].onmouseout = function () {
+                nl(this);
+            }
+
+        }
+
+        second.onmouseover = function () {
+            second.style.backgroundColor = "black";
+
+        };
+
+        second.onmouseout = function () {
+            second.style.backgroundColor = "lightgrey";
+        };
+        faxian.onmouseover = function () {
+            bs(this)
+        };
+        faxian.onmouseout = function () {
+            nl(this)
+        };
+
+        news.onmouseover = function () {
+            bs(this)
+        };
+        news.onmouseout = function () {
+            nl(this)
+        };
+        guan.onmouseover = function () {
+            bs(this)
+        };
+        guan.onmouseout = function () {
+            nl(this)
+        };
+        this.style.backgroundColor = "deepskyblue";
+        document.body.style.backgroundColor="darkslategrey";
+        g.style.backgroundColor = "white";
+        h.style.backgroundColor = "darkslategrey";
+        yin.style.backgroundColor = "darkslategrey";
+        firstyin.style.backgroundColor = "darkslategrey";
+
     };
     g.onclick= function() {
-        this.style.backgroundColor = "deepskyblue";
-        document.body.style.backgroundColor="white";
-        kai.style.backgroundColor = "white";
-        h.style.backgroundColor = "white";
-        yin.style.backgroundColor = "white";
-        firstyin.style.backgroundColor = "white";
-
-
-//变色
-
-    };
-    if( document.body.style.backgroundColor="white") {
-        function bianse(x) {
-            x.style.backgroundColor = "lightgrey";
-        }
-
-        function normal(x) {
-            x.style.backgroundColor = "white";
-        }
 
         faxian.onmouseover = function () {
             bianse(this)
         };
         faxian.onmouseout = function () {
-            normal(this);
+            normal(this)
         };
 
         news.onmouseover = function () {
             bianse(this)
         };
         news.onmouseout = function () {
-            normal(this);
+            normal(this)
         };
         guan.onmouseover = function () {
             bianse(this)
         };
         guan.onmouseout = function () {
-            normal(this);
+            normal(this)
         };
 
-    }
-    else{
+        for (var i = 0; i < second.length; i++) {
+            second[i].onmouseover = function () {
+                bianse(this)
+            };
+            second[i].onmouseout = function () {
+                normal(this);
+            }
+
+        }
+
+        second.onmouseover = function () {
+            second.style.backgroundColor = "black";
+
+        };
+
+        second.onmouseout = function () {
+            second.style.backgroundColor = "white";
+        };
+//变色
+        this.style.backgroundColor = "deepskyblue";
+        document.body.style.backgroundColor="white";
+        kai.style.backgroundColor = "white";
+        h.style.backgroundColor = "white";
+        yin.style.backgroundColor = "white";
+        firstyin.style.backgroundColor = "white";
+    };
+
+
+
+    if(co="white") {
+
+
 
     }
+
+else
+{
+
+
+}
     function stopBubble(e) {
         if(e && e.stopPropagation) { //非IE
             e.stopPropagation();
@@ -177,6 +266,7 @@ erweima.style.display="block";
     yun[1].timer = null;
     yun[0].timer = null;
    yun[1].onclick = function (ev) {
+       sousuo.style.display = "block";
        startmove(this, 280);
        startmove(yun[0], 300);
        var oEvent = ev || event;
@@ -187,6 +277,14 @@ erweima.style.display="block";
 
 
     };
+
+    Aa.onclick = function (ev) {
+        var oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        stopBubble(oEvent);
+        moshi.style.display = "block";
+
+    };
     /*$(function(){
         $(".yun").click(function(event){
             event.stopPropagation();});
@@ -194,7 +292,9 @@ erweima.style.display="block";
     });*/
    document.onclick=function()
    {
+       sousuo.style.display = "none";
        startmove(yun[1], 180);
+      moshi.style.display="none";
    };
 
     function startmove(obj, target) {
