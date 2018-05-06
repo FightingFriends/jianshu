@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>简书</title>
+    <title>简书</title>0/-09-
 
 <link rel="stylesheet" href="jianshuhead.css" type="text/css">
     <link rel="stylesheet" href="imgzhongjian.css" type="text/css">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="jianshu.js"></script>
-    <script src="jq.js"></script>
-
-    <script src="qrcode.min.js"></script>
 
 
 </head>
@@ -19,32 +15,32 @@
 <div id="header">
     <ul>
         <li class="jianshu">简书</li>
-         <li class="h2" id="faxian">发现</li>
+         <li class="h2 bian" id="faxian">发现</li>
 
 
-        <li class="h4" id="new" > <span>消息</span></li>
+        <li class="h4 bian" id="new" > <span>消息</span></li>
     </ul>
     <div id="yincang">
-        <div class="h3" id="guanzhu">关注</div>
+        <div class="h3 bian" id="guanzhu">关注</div>
         <div id="yincangfirst">
         <ul>
             <li class="secondyincang ">
 
                 <a href="" class="color">
-                    <i class="fa fa-comment-o red" ></i>   <span class="second">评论</span>
+                    <i class="fa fa-comment-o red" ></i>   <span class="second ">评论</span>
                 </a>
             </li>
             <li class="secondyincang ">
 
                 <a href="" class="color">
-                    <i class="fa fa-envelope-o red" ></i>  <span class="second">简信</span>
+                    <i class="fa fa-envelope-o red" ></i>  <span class="second ">简信</span>
                 </a>
             </li>
 
             <li class="secondyincang color">
                 <a href="" class="color">
 
-                    <span class="second">投稿请求</span>
+                    <span class="second bian">投稿请求</span>
                 </a>          </li>
             <li class="secondyincang">
                 <a href="" class="color">
@@ -395,10 +391,44 @@ Aa
         </div>
 
     </div>
-    <div id="author" class="right">
-
+    <div>
+    <button class="zhiding btn btn-primary btn-block" id="Div">
+        <a href="#">置顶</a>
+    </button>
     </div>
 </div>
+<script src="jianshu.js"></script>
+<script src="jq.js"></script>
 
+<script src="qrcode.min.js"></script>
+
+<script>
+    $(function () {
+        //绑定滚动条事件  
+        //绑定滚动条事件  
+        $(window).bind("scroll", function () {
+            var sTop = $(window).scrollTop();
+            var sTop = parseInt(sTop);
+            if (sTop >= 130) {
+                if (!$("#Div").is(":visible")) {
+                    try {
+                        $("#Div").fadeIn();
+                    } catch (e) {
+                        $("#Div").show();
+                    }
+                }
+            }
+            else {
+                if ($("#Div").is(":visible")) {
+                    try {
+                        $("#Div").fadeOut();
+                    } catch (e) {
+                        $("#Div").hide();
+                    }
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 window.onload=function() {
 
-var h=document.getElementById("header");
+    var h = document.getElementById("header");
     var yin = document.getElementById("yincangsecond");
 
     var bian = document.getElementById("bianhua");
@@ -11,51 +11,45 @@ var h=document.getElementById("header");
     var guan = document.getElementById("guanzhu");
     var firstyin = document.getElementById("yincangfirst");
     var fyin = document.getElementById("yincang");
-
-    var sousuo=document.getElementById("sousuo");
-    var so=document.getElementById("divinput");
+var sc=document.getElementsByClassName("second");
+    var sousuo = document.getElementById("sousuo");
+    var so = document.getElementById("divinput");
 
     var faxian = document.getElementById("faxian");
-var Aa= document.getElementById("Aa");
+    var Aa = document.getElementById("Aa");
 
-var moshi = document.getElementById("moshi");
-var kai=document.getElementById("kai");
-var g=document.getElementById("guan");
+    var moshi = document.getElementById("moshi");
+    var kai = document.getElementById("kai");
+    var g = document.getElementById("guan");
 
     var yun = document.getElementsByClassName('yun');
-    var app=document.getElementById("app");
-    var erweima=document.getElementById("erweima");
+    var app = document.getElementById("app");
+    var erweima = document.getElementById("erweima");
 
 
+    var mg = document.getElementsByClassName("mg");
 
-    var mg=document.getElementsByClassName("mg");
-
-   so.onclick = function () {
+    so.onclick = function () {
 
 
     };
 
 
-
-
-
-    app.onmouseover=function(){
-erweima.style.display="block";
+    app.onmouseover = function () {
+        erweima.style.display = "block";
 
     };
-    
-    app.onmouseout=function(){
-        erweima.style.display="none";
+
+    app.onmouseout = function () {
+        erweima.style.display = "none";
     };
 
 
-
-
-    for (var j= 0; j< mg.length; j++) {
-        mg[j].onmouseover=function() {
-          this.style.textDecoration = "underline";
+    for (var j = 0; j < mg.length; j++) {
+        mg[j].onmouseover = function () {
+            this.style.textDecoration = "underline";
         };
-        mg[j].onmouseout=function() {
+        mg[j].onmouseout = function () {
             this.style.textDecoration = "none";
         }
     }
@@ -116,16 +110,18 @@ erweima.style.display="block";
     guan.onmouseout = function () {
         normal(this)
     };
+
     function bianse(x) {
         x.style.backgroundColor = "lightgrey";
     }
 
     function normal(x) {
-        x.style.backgroundColor = "white";
+        x.style.backgroundColor = "";
     }
-    kai.onclick= function() {
+
+    kai.onclick = function () {
         this.style.backgroundColor = "deepskyblue";
-        document.body.style.backgroundColor="darkslategrey";
+        document.body.style.backgroundColor = "darkslategrey";
         g.style.backgroundColor = "white";
         h.style.backgroundColor = "darkslategrey";
         yin.style.backgroundColor = "darkslategrey";
@@ -140,14 +136,7 @@ erweima.style.display="block";
 
         }
 
-        second.onmouseover = function () {
-            second.style.backgroundColor = "black";
 
-        };
-
-        second.onmouseout = function () {
-            second.style.backgroundColor = "lightgrey";
-        };
         faxian.onmouseover = function () {
             bs(this)
         };
@@ -168,15 +157,18 @@ erweima.style.display="block";
             nl(this)
         };
         this.style.backgroundColor = "deepskyblue";
-        document.body.style.backgroundColor="darkslategrey";
+        document.body.style.backgroundColor = "darkslategrey";
         g.style.backgroundColor = "white";
         h.style.backgroundColor = "darkslategrey";
         yin.style.backgroundColor = "darkslategrey";
         firstyin.style.backgroundColor = "darkslategrey";
 
     };
-    g.onclick= function() {
-
+    g.onclick = function () {
+        for(var j=0;j<sc.length;j++)
+        {
+            sc[j].style.backgroundColor="";
+        }
         faxian.onmouseover = function () {
             bianse(this)
         };
@@ -196,6 +188,7 @@ erweima.style.display="block";
         guan.onmouseout = function () {
             normal(this)
         };
+
 
         for (var i = 0; i < second.length; i++) {
             second[i].onmouseover = function () {
@@ -217,7 +210,7 @@ erweima.style.display="block";
         };
 //变色
         this.style.backgroundColor = "deepskyblue";
-        document.body.style.backgroundColor="white";
+        document.body.style.backgroundColor = "white";
         kai.style.backgroundColor = "white";
         h.style.backgroundColor = "white";
         yin.style.backgroundColor = "white";
@@ -225,20 +218,18 @@ erweima.style.display="block";
     };
 
 
-
-    if(co="white") {
-
+    if (co = "white") {
 
 
     }
 
-else
-{
+    else {
 
 
-}
+    }
+
     function stopBubble(e) {
-        if(e && e.stopPropagation) { //非IE
+        if (e && e.stopPropagation) { //非IE
             e.stopPropagation();
         } else { //IE
             window.event.cancelBubble = true;
@@ -254,26 +245,21 @@ else
         startmove(this, 300);
 
 
-
-
     };
-    document.body.onclick=function()
-    {
+    document.body.onclick = function () {
         startmove(yun[0], 200);
 
     };
 
     yun[1].timer = null;
     yun[0].timer = null;
-   yun[1].onclick = function (ev) {
-       sousuo.style.display = "block";
-       startmove(this, 280);
-       startmove(yun[0], 300);
-       var oEvent = ev || event;
-       oEvent.cancelBubble = true;
-       stopBubble(oEvent);
-
-
+    yun[1].onclick = function (ev) {
+        sousuo.style.display = "block";
+        startmove(this, 280);
+        startmove(yun[0], 300);
+        var oEvent = ev || event;
+        oEvent.cancelBubble = true;
+        stopBubble(oEvent);
 
 
     };
@@ -290,12 +276,11 @@ else
             event.stopPropagation();});
 
     });*/
-   document.onclick=function()
-   {
-       sousuo.style.display = "none";
-       startmove(yun[1], 180);
-      moshi.style.display="none";
-   };
+    document.onclick = function () {
+        sousuo.style.display = "none";
+        startmove(yun[1], 180);
+        moshi.style.display = "none";
+    };
 
     function startmove(obj, target) {
         clearInterval(obj.timer);
@@ -310,11 +295,6 @@ else
             }
         })
     }
-
-
-
-
-
 
 
     for (var i = 0; i < second.length; i++) {
@@ -343,7 +323,7 @@ else
     });
     qrcode.makeCode("http://www.jianshu.com");
     document.getElementById("send").onclick = function () {
-        qrcode.makeCode(document.getElementById=("getval").value);
+        qrcode.makeCode(document.getElementById = ("getval").value);
     };
     var er = new QRCode(document.getElementById("er"), {
         width: 60,//设置宽高
@@ -351,11 +331,15 @@ else
     });
     er.makeCode("http://www.jianshu.com");
     document.getElementById("send").onclick = function () {
-        er.makeCode(document.getElementById=("getval").value);
+        er.makeCode(document.getElementById = ("getval").value);
     };
+
+
+      
+
+
+
 };
-
-
 
 
 
